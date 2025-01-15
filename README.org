@@ -1,5 +1,7 @@
 #+Title: k4i's split kbd
 
+[[https://nickcoutsos.github.io/keymap-editor/][ZMK GUI]] 
+
 [[./README-zh_CN.org][中文]] | English
 
 * Quick Start
