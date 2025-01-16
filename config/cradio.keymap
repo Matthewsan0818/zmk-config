@@ -9,6 +9,9 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
 
 #define MAC 0
 #define WIN 1
@@ -104,10 +107,10 @@
 
         mouse {
             bindings = <
-&tog MOUSE  &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &trans        &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &msc SCRL_RIGHT  &tog MOUSE
-&trans      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_LEFT   &trans
-&trans      &trans          &trans          &trans           &trans        &trans          &mkp MB4        &mkp MCLK        &mkp MB5         &trans
-                                            &kp SPACE        &kp LSHIFT    &mkp LCLK       &mkp RCLK
+&tog MOUSE  &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &trans       &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &msc SCRL_RIGHT  &tog MOUSE
+&trans      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans       &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_LEFT   &trans
+&trans      &trans          &trans          &trans           &trans       &trans          &mkp MB4        &mkp MCLK        &mkp MB5         &trans
+                                            &mkp RCLK        &mkp LCLK    &mkp LCLK       &mkp RCLK
             >;
         };
     };
