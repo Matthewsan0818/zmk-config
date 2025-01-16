@@ -9,6 +9,9 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
 
 #define MAC 0
 #define WIN 1
@@ -87,10 +90,10 @@
 
         right_layer {
             bindings = <
-&kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp UP     &kp MINUS      &kp EQUAL               &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &bootloader
-&kp LEFT_SHIFT    &kp LEFT           &kp DOWN   &kp RIGHT      &kp NON_US_BACKSLASH    &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PIPE      &trans
-&kp COMMA         &kp PERIOD         &kp SLASH  &kp SEMICOLON  &kp SQT                 &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD    &trans
-                                                &trans         &kp ESC                 &trans        &trans
+&kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp UP     &kp MINUS      &kp EQUAL        &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &bootloader
+&kp LEFT_SHIFT    &kp LEFT           &kp DOWN   &kp RIGHT      &kp BACKSLASH    &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PIPE      &trans
+&kp COMMA         &kp PERIOD         &kp SLASH  &kp SEMICOLON  &kp SQT          &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD    &trans
+                                                &trans         &kp ESC          &trans        &trans
             >;
         };
 
