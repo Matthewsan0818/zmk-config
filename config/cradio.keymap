@@ -117,10 +117,10 @@
 
         mouse {
             bindings = <
-&tog MOUSE  &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &trans       &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &msc SCRL_RIGHT  &tog MOUSE
-&trans      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans       &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_LEFT   &trans
-&trans      &trans          &trans          &trans           &trans       &trans          &mkp MB4        &mkp MCLK        &mkp MB5         &trans
-                                            &mkp RCLK        &mkp LCLK    &mkp LCLK       &mkp RCLK
+&tog MOUSE  &msc SCRL_RIGHT  &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN     &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &msc SCRL_RIGHT  &tog MOUSE
+&trans      &msc SCRL_LEFT   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_LEFT   &trans
+&trans      &trans           &trans          &trans          &trans             &trans          &mkp MB4        &mkp MCLK        &mkp MB5         &trans
+                                             &mkp RCLK       &mkp LCLK          &mkp LCLK       &mkp RCLK
             >;
         };
     };
