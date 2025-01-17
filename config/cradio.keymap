@@ -66,6 +66,55 @@
             layers = <0 1>;
         };
 
+        Question {
+            bindings = <&kp QUESTION>;
+            key-positions = <27 28>;
+            layers = <0 1>;
+        };
+
+
+        Question {
+            bindings = <&kp QUESTION>;
+            key-positions = <27 28>;
+            layers = <0 1>;
+        };
+
+
+        Question {
+            bindings = <&kp QUESTION>;
+            key-positions = <27 28>;
+            layers = <0 1>;
+        };
+
+
+        Question {
+            bindings = <&kp QUESTION>;
+            key-positions = <27 28>;
+            layers = <0 1>;
+        };
+
+
+        Question {
+            bindings = <&kp QUESTION>;
+            key-positions = <27 28>;
+            layers = <0 1>;
+        };
+
+
+        Question {
+            bindings = <&kp QUESTION>;
+            key-positions = <27 28>;
+            layers = <0 1>;
+        };
+
+
+        Question {
+            bindings = <&kp QUESTION>;
+            key-positions = <27 28>;
+            layers = <0 1>;
+        };
+
+
         rb {
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <9 33>;
