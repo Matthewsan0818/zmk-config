@@ -132,6 +132,12 @@
             layers = <0 1>;
         };
 
+        rcb {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <33 19>;
+            layers = <0 1>;
+        };
+
         caps {
             bindings = <&kp CAPS>;
             key-positions = <20 10>;
@@ -148,12 +154,6 @@
             bindings = <&kp EQUAL>;
             key-positions = <17 18>;
             layers = <0 1 2>;
-        };
-
-        rcb {
-            bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <33 19>;
-            layers = <0 1>;
         };
     };
 
