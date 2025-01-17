@@ -141,6 +141,12 @@
             layers = <0 1>;
         };
 
+        ast {
+            bindings = <&kp CAPS>;
+            key-positions = <20 10>;
+            layers = <0 1>;
+        };
+
         minus {
             bindings = <&kp MINUS>;
             key-positions = <17 16>;
