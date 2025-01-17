@@ -9,6 +9,9 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
 
 #define MAC 0
 #define WIN 1
@@ -58,7 +61,7 @@
         compatible = "zmk,combos";
 
         qst {
-            bindings = <&kp QUESTION>;
+            bindings = <&kp SLASH>;
             key-positions = <27 28>;
             layers = <0 1>;
         };
@@ -169,6 +172,18 @@
             bindings = <&kp ESCAPE>;
             key-positions = <0 1>;
             layers = <0 1>;
+        };
+
+        colon {
+            bindings = <&kp SEMICOLON>;
+            key-positions = <16 27>;
+            layers = <0 1 2>;
+        };
+
+        Quote {
+            bindings = <&kp APOSTROPHE>;
+            key-positions = <16 28>;
+            layers = <0 1 2>;
         };
     };
 
