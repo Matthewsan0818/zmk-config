@@ -9,6 +9,9 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
 
 #define MAC 0
 #define WIN 1
@@ -213,19 +216,19 @@
 
         right_layer {
             bindings = <
-&kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp UP     &kp MINUS      &kp EQUAL        &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &bootloader
-&kp LEFT_SHIFT    &kp LEFT           &kp DOWN   &kp RIGHT      &kp BACKSLASH    &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PIPE      &trans
-&kp COMMA         &kp PERIOD         &kp SLASH  &kp SEMICOLON  &kp SQT          &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD    &trans
-                                                &trans         &kp ESC          &trans        &trans
+&ht LBRC LEFT_BRACKET  &ht RBRC RIGHT_BRACKET  &kp UP              &ht UNDER MINUS      &ht PLUS EQUAL     &ht AMPS NUMBER_7  &ht STAR NUMBER_8   &ht LPAR NUMBER_9   &ht RPAR NUMBER_0  &bootloader
+&kp LEFT_SHIFT         &kp LEFT                &kp DOWN            &kp RIGHT            &ht TILDE GRAVE    &ht DLLR NUMBER_4  &ht PRCNT NUMBER_5  &ht CARET NUMBER_6  &kp PIPE           &trans
+&trans                 &ht QMARK SLASH         &ht PIPE BACKSLASH  &ht COLON SEMICOLON  &ht DQT SQT        &ht EXCL NUMBER_1  &ht AT NUMBER_2     &ht HASH NUMBER_3   &kp PERIOD         &trans
+                                                                   &trans               &kp ESC            &trans             &trans
             >;
         };
 
         left_layer {
             bindings = <
-&kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT          &kp CARET  &kp AMPS   &kp ASTRK  &kp GRAVE  &kp TILDE
-&kp DQT   &kp LBKT  &kp LBRC  &kp LPAR  &default_report    &kp FSLH   &kp MINUS  &kp EQUAL  &kp COLON  &kp SEMI
-&kp SQT   &kp RBKT  &kp RBRC  &kp RPAR  &bootloader        &kp BSLH   &kp UNDER  &kp PLUS   &kp PIPE   &kp QMARK
-                              &trans    &trans             &tog 5     &trans
+&kp EXCL        &kp AT    &kp HASH  &kp DLLR  &kp PRCNT          &kp CARET  &kp AMPS   &kp ASTRK  &kp MINUS       &kp EQUAL
+&kp LEFT_SHIFT  &kp LBKT  &kp LBRC  &kp LPAR  &default_report    &kp FSLH   &kp MINUS  &kp EQUAL  &kp UNDERSCORE  &kp PLUS
+&kp GRAVE       &kp RBKT  &kp RBRC  &kp RPAR  &bootloader        &kp BSLH   &kp UNDER  &kp PLUS   &trans          &trans
+                                    &trans    &trans             &tog 5     &trans
             >;
         };
 
@@ -241,8 +244,8 @@
         mouse {
             bindings = <
 &tog 5            &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &msc SCRL_LEFT     &msc SCRL_RIGHT  &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &tog 5
-&kp LEFT_SHIFT    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_RIGHT    &msc SCRL_LEFT   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans
-&kp LEFT_CONTROL  &kp LEFT_ALT    &kp LEFT_GUI    &trans           &trans             &trans           &trans          &trans          &trans           &trans
+&kp LEFT_SHIFT    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_RIGHT    &msc SCRL_LEFT   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp RIGHT_SHIFT
+&kp LEFT_CONTROL  &kp LEFT_ALT    &kp LEFT_GUI    &trans           &trans             &trans           &trans          &kp RIGHT_GUI   &kp RIGHT_ALT    &kp RIGHT_CONTROL
                                                   &mkp LCLK        &mkp RCLK          &mkp RCLK        &mkp LCLK
             >;
         };
