@@ -52,75 +52,75 @@
         compatible = "zmk,conditional-layers";
 
         tri_layer {
-            if-layers = <RIG LEF>;
-            then-layer = <TRI>;
+            if-layers = <2 3>;
+            then-layer = <4>;
         };
     };
 
     combos {
         compatible = "zmk,combos";
 
-        Question {
+        qst {
             bindings = <&kp QUESTION>;
             key-positions = <27 28>;
             layers = <0 1>;
         };
 
-        Question {
+        rb {
             bindings = <&kp RPAR>;
             key-positions = <33 9>;
             layers = <0 1>;
         };
 
-        Question {
+        lb {
             bindings = <&kp LPAR>;
             key-positions = <8 33>;
             layers = <0 1>;
         };
 
-        Question {
+        star {
             bindings = <&kp STAR>;
             key-positions = <33 7>;
             layers = <0 1>;
         };
 
-        Question {
+        amp {
             bindings = <&kp AMPS>;
             key-positions = <33 6>;
             layers = <0 1>;
         };
 
-        Question {
+        caret {
             bindings = <&kp CARET>;
             key-positions = <33 5>;
             layers = <0 1>;
         };
 
-        Question {
+        pct {
             bindings = <&kp PRCNT>;
             key-positions = <33 4>;
             layers = <0 1>;
         };
 
-        Question {
+        dollar {
             bindings = <&kp DLLR>;
             key-positions = <33 3>;
             layers = <0 1>;
         };
 
-        rb {
+        hash {
             bindings = <&kp HASH>;
             key-positions = <33 2>;
             layers = <0 1>;
         };
 
-        lb {
+        at {
             bindings = <&kp AT>;
             key-positions = <33 1>;
             layers = <0 1>;
         };
 
-        rcb {
+        exclaim {
             bindings = <&kp EXCL>;
             key-positions = <33 0>;
             layers = <0 1>;
@@ -162,10 +162,10 @@
 
         default_layer {
             bindings = <
-&kp Q  &kp W       &kp E        &kp R        &kp T         &kp Y      &kp U        &kp I          &kp O                 &kp P
-&kp A  &ht LALT S  &ht LCTRL D  &ht LGUI F   &kp G         &kp H      &ht RGUI J   &ht RCTRL K    &ht RALT L            &kp BSPC
-&kp Z  &kp X       &kp C        &kp V        &kp B         &kp N      &kp M        &ht SQT COMMA  &ht BACKSLASH PERIOD  &kp ENTER
-                                &lt LEF TAB  &kp LSHIFT    &kp SPACE  &lt RIG TAB
+&kp Q  &kp W       &kp E        &kp R       &kp T         &kp Y      &kp U       &kp I          &kp O                 &kp P
+&kp A  &ht LALT S  &ht LCTRL D  &ht LGUI F  &kp G         &kp H      &ht RGUI J  &ht RCTRL K    &ht RALT L            &kp BSPC
+&kp Z  &kp X       &kp C        &kp V       &kp B         &kp N      &kp M       &ht SQT COMMA  &ht BACKSLASH PERIOD  &kp ENTER
+                                &lt 3 TAB   &kp LSHIFT    &kp SPACE  &lt 2 TAB
             >;
         };
 
@@ -174,7 +174,7 @@
 &kp Q  &kp W       &kp E       &kp R        &kp T         &kp Y      &kp U        &kp I          &kp O              &kp P
 &kp A  &ht LALT S  &ht LGUI D  &ht LCTRL F  &kp G         &kp H      &ht RCTRL J  &ht RGUI K     &ht RALT L         &kp BSPC
 &kp Z  &kp X       &kp C       &kp V        &kp B         &kp N      &kp M        &ht SQT COMMA  &ht BACKSLASH DOT  &kp ENTER
-                               &lt LEF TAB  &kp LSHIFT    &kp SPACE  &lt RIG TAB
+                               &lt 3 TAB    &kp LSHIFT    &kp SPACE  &lt 2 TAB
             >;
         };
 
@@ -189,16 +189,16 @@
 
         left_layer {
             bindings = <
-&kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT          &kp CARET   &kp AMPS   &kp ASTRK  &kp GRAVE  &kp TILDE
-&kp DQT   &kp LBKT  &kp LBRC  &kp LPAR  &default_report    &kp FSLH    &kp MINUS  &kp EQUAL  &kp COLON  &kp SEMI
-&kp SQT   &kp RBKT  &kp RBRC  &kp RPAR  &bootloader        &kp BSLH    &kp UNDER  &kp PLUS   &kp PIPE   &kp QMARK
-                              &trans    &trans             &tog MOUSE  &trans
+&kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT          &kp CARET  &kp AMPS   &kp ASTRK  &kp GRAVE  &kp TILDE
+&kp DQT   &kp LBKT  &kp LBRC  &kp LPAR  &default_report    &kp FSLH   &kp MINUS  &kp EQUAL  &kp COLON  &kp SEMI
+&kp SQT   &kp RBKT  &kp RBRC  &kp RPAR  &bootloader        &kp BSLH   &kp UNDER  &kp PLUS   &kp PIPE   &kp QMARK
+                              &trans    &trans             &tog 5     &trans
             >;
         };
 
         tri_layer {
             bindings = <
-&kp F1  &kp F2   &kp F3   &kp F4   &bt BT_SEL 0    &bt BT_SEL 2  &out OUT_TOG   &tog WIN        &kp C_MUTE    &kp C_BRIGHTNESS_MINIMUM
+&kp F1  &kp F2   &kp F3   &kp F4   &bt BT_SEL 0    &bt BT_SEL 2  &out OUT_TOG   &tog 1          &kp C_MUTE    &kp C_BRIGHTNESS_MINIMUM
 &kp F5  &kp F6   &kp F7   &kp F8   &bt BT_SEL 1    &bt BT_SEL 3  &kp C_BRI_UP   &studio_unlock  &kp C_VOL_UP  &kp C_BRIGHTNESS_INC
 &kp F9  &kp F10  &kp F11  &kp F12  &bt BT_CLR      &bt BT_SEL 4  &kp C_BRI_DEC  &trans          &kp C_VOL_DN  &to 1
                           &trans   &trans          &trans        &trans
@@ -207,10 +207,10 @@
 
         mouse {
             bindings = <
-&tog MOUSE  &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &msc SCRL_LEFT     &msc SCRL_RIGHT  &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &tog MOUSE
-&trans      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_RIGHT    &msc SCRL_LEFT   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans
-&trans      &trans          &trans          &trans           &trans             &trans           &trans          &trans          &trans           &trans
-                                            &mkp LCLK        &mkp RCLK          &mkp RCLK        &mkp LCLK
+&tog 5  &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &msc SCRL_LEFT     &msc SCRL_RIGHT  &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &tog 5
+&trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_RIGHT    &msc SCRL_LEFT   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans
+&trans  &trans          &trans          &trans           &trans             &trans           &trans          &trans          &trans           &trans
+                                        &mkp LCLK        &mkp RCLK          &mkp RCLK        &mkp LCLK
             >;
         };
     };
