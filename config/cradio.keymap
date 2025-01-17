@@ -9,6 +9,9 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
 
 #define MAC 0
 #define WIN 1
@@ -141,9 +144,9 @@
             layers = <0 1>;
         };
 
-        ast {
-            bindings = <&kp CAPS>;
-            key-positions = <20 10>;
+        til {
+            bindings = <&kp GRAVE>;
+            key-positions = <10 14>;
             layers = <0 1>;
         };
 
