@@ -67,69 +67,62 @@
         };
 
         Question {
-            bindings = <&kp QUESTION>;
-            key-positions = <27 28>;
+            bindings = <&kp RPAR>;
+            key-positions = <33 9>;
             layers = <0 1>;
         };
-
 
         Question {
-            bindings = <&kp QUESTION>;
-            key-positions = <27 28>;
-            layers = <0 1>;
-        };
-
-
-        Question {
-            bindings = <&kp QUESTION>;
-            key-positions = <27 28>;
-            layers = <0 1>;
-        };
-
-
-        Question {
-            bindings = <&kp QUESTION>;
-            key-positions = <27 28>;
-            layers = <0 1>;
-        };
-
-
-        Question {
-            bindings = <&kp QUESTION>;
-            key-positions = <27 28>;
-            layers = <0 1>;
-        };
-
-
-        Question {
-            bindings = <&kp QUESTION>;
-            key-positions = <27 28>;
-            layers = <0 1>;
-        };
-
-
-        Question {
-            bindings = <&kp QUESTION>;
-            key-positions = <27 28>;
-            layers = <0 1>;
-        };
-
-
-        rb {
-            bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <9 33>;
-            layers = <0 1>;
-        };
-
-        lb {
-            bindings = <&kp LEFT_PARENTHESIS>;
+            bindings = <&kp LPAR>;
             key-positions = <8 33>;
             layers = <0 1>;
         };
 
+        Question {
+            bindings = <&kp STAR>;
+            key-positions = <33 7>;
+            layers = <0 1>;
+        };
+
+        Question {
+            bindings = <&kp AMPS>;
+            key-positions = <33 6>;
+            layers = <0 1>;
+        };
+
+        Question {
+            bindings = <&kp CARET>;
+            key-positions = <33 5>;
+            layers = <0 1>;
+        };
+
+        Question {
+            bindings = <&kp PRCNT>;
+            key-positions = <33 4>;
+            layers = <0 1>;
+        };
+
+        Question {
+            bindings = <&kp DLLR>;
+            key-positions = <33 3>;
+            layers = <0 1>;
+        };
+
+        rb {
+            bindings = <&kp HASH>;
+            key-positions = <33 2>;
+            layers = <0 1>;
+        };
+
+        lb {
+            bindings = <&kp AT>;
+            key-positions = <33 1>;
+            layers = <0 1>;
+        };
+
         rcb {
-            bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <19 33>;
+            bindings = <&kp EXCL>;
+            key-positions = <33 0>;
             layers = <0 1>;
         };
 
@@ -155,6 +148,12 @@
             bindings = <&kp EQUAL>;
             key-positions = <17 18>;
             layers = <0 1 2>;
+        };
+
+        rcb {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <33 19>;
+            layers = <0 1>;
         };
     };
 
